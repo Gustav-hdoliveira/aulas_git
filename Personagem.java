@@ -41,7 +41,7 @@ public class Personagem {
         PTvigor = vigor;
         PTresistencia = resistencia;
         PTvitalidade = vitalidade;
-        PTsintonização = sintonização; // quantos de feitiços podem ser portados ao msm tempo
+        PTsintonização = sintonização; // quantos feitiços podem ser portados ao msm tempo
         PTforca = forca;
         PTdestreza = destreza;
         PTvelocidade = adaptabilidade; // a velocidade do jogador é determinada dividindo o atributo por 2
@@ -85,10 +85,11 @@ public class Personagem {
         }
         
     }
+
     public void sofrerDano(double dano){
         double danoCalculado = getVidaAtual() - calcularDano(dano);
         vidaAtual = danoCalculado;
-        System.out.println("Você sofreu " + vidaAtual + " de dano.");
+        System.out.println("Você sofreu " + calcularDano(dano) + " de dano.");
     }
     
     public String getNome() {
