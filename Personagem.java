@@ -92,7 +92,6 @@ public class Personagem {
             double danoreal = danocalculo / 10;
             return danoreal;
         }
-        
     }
 
     public void sofrerDano(double dano){
