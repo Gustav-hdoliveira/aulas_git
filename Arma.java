@@ -28,4 +28,29 @@ public class Arma {
     public Arma getArma(Arma arma){
         return arma;
     }
+    
+    public String getNome_arma(){
+        return nome_arma;
+    }
+    
+    public int getForca_min(){
+        return forca_min;
+    }
+    
+    public int getDestreza_min(){
+        return destreza_min;
+    }
+    
+    public int getInteligencia_min(){
+        return inteligencia_min;
+    }
+    
+    public int getFe_min(){
+        return fe_min;
+    }
+    
+    public int getPoder_ataque(){
+        return poder_ataque;
+    }
+    
 }

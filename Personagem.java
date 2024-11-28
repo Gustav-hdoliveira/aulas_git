@@ -55,6 +55,15 @@ public class Personagem {
         return Spersonagem;
     }
     
+    public void reagirAtaque(Inimigo atacante){
+        calcularDesvioChance(atacante.getVelocidade());
+        if(true){
+            System.out.println("Ataque esquivado.");
+        } else {
+            sofrerDano(atacante.getAtaque());
+        }
+    }
+    
     public boolean calcularDesvioChance(double velocidade_ataque){
         double diferenca = velocidade_ataque / (PTvelocidade / 2);
         double placar = Math.random()*20;
