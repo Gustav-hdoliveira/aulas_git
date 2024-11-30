@@ -14,16 +14,4 @@ public class Persona_criacao {
         
     }
     
-    public int calcular_dado(){
-        int numDado = ((int)Math.random()*6) + 1;
-        return numDado;
-    }
-    
-    public int rodar_dados(int vezes){
-        int roladas = 0;
-        while(roladas < vezes){
-            
-        }
-        return 0;
-    }
 }
